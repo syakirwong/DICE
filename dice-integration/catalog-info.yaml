@@ -10,14 +10,4 @@ spec:
   lifecycle: experimental
   owner: team-a
   system: DICE
----
-apiVersion: backstage.io/v1alpha1
-kind: API
-metadata:
-  name: dice-integration-api
-spec:
-  type: openapi
-  lifecycle: experimental
-  owner: team-a
-  system: DICE
-  
+
