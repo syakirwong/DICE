@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: dice-integration-api
+  description: Dice Integration API
+  tags:
+    - DICE
+    - rest
+  links:
+    - url: http://localhost:9095/dice/swagger-ui.html#/inbound-controller
+      title: API Spec
+      icon: code
+spec:
+  type: swagger
+  lifecycle: experimental
+  owner: team-a
