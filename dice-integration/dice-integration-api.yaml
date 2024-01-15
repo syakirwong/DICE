@@ -10,6 +10,5 @@ metadata:
       title: API Spec
       icon: code
 spec:
-  type: swagger
   lifecycle: experimental
   owner: team-a
