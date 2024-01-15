@@ -10,5 +10,6 @@ metadata:
       title: API Spec
       icon: code
 spec:
+  type: openapi
   lifecycle: experimental
   owner: team-a
