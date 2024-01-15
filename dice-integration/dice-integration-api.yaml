@@ -5,10 +5,6 @@ metadata:
   description: Dice Integration API
   tags:
     - rest
-  links:
-    - url: http://localhost:9095/dice/swagger-ui.html#/inbound-controller
-      title: API Spec
-      icon: code
 spec:
   type: openapi
   lifecycle: experimental
