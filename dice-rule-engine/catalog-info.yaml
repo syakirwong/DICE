@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: dice-rule-engine
+  description: Dice Rule Engine
+  tags:
+    - java
+spec:
+  type: service
+  lifecycle: experimental
+  owner: team-a
+  system: DICE
