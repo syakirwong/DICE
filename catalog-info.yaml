@@ -1,10 +1,9 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: System
 metadata:
   name: DICE
   annotations:
     github.com/project-slug: syakirwong/DICE
 spec:
-  type: other
-  lifecycle: unknown
+  lifecycle: experimental
   owner: team-a
