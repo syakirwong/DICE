@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>${title}</title>
+    </head>
+
+    <body>
+        <div style="font-size:16px; padding-top: 20px">
+            Hello,
+            <br/><br/>
+            This is an automated alert to inform you that the process of campaign scheduling encounter error. Please find below the detail:
+            <br/><br/>
+            <strong>Campaign Schedule Detail:</strong>
+            <br/>
+            campaignScheduleId : ${campaignScheduleId}
+	        <br/>
+	        filePath : ${filePath}
+	        <br/>
+	        fileName : ${fileName}
+            <br/>
+	        campaignId : ${campaignId}
+            <br/>
+	        scheduleStatus : ${scheduleStatus}
+            <br/>
+	        remark : ${remark}
+            <br/>
+	        processedIndex : ${processedIndex}
+            <br/><br/>
+            If you have any questions or concerns, please contact the system administrator for assistance.
+            <br/><br/>
+            Best regards,<br/>
+            DICE
+        </div>
+    </body>
+</html>

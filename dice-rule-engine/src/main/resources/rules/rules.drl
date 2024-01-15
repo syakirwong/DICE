@@ -1,0 +1,39 @@
+import com.alliance.diceruleengine.model.Rule;
+import com.alliance.diceruleengine.model.CustomerSegmentationTemplate;
+import com.alliance.diceruleengine.model.Customer;
+import com.alliance.diceruleengine.utility.RuleUtil;
+import java.util.Map;
+import java.util.Set;
+import java.util.HashSet;
+import java.lang.Integer;
+
+// query "Get rule with ruleTemplateId 1 and 2"
+//     $rule: Rule(ruleTemplateId contains 1 && ruleTemplateId contains 2 )
+// end
+
+global Set<Integer> customerSegmentId;
+
+
+rule "Customer age above 30"
+when
+    $customer: Customer(
+        customerAge > 30
+    )
+then
+    customerSegmentId.add(1);
+    modify($customer) {
+        setCustomerSegmentId(customerSegmentId);
+    }
+end
+
+rule "Customer type SOLO_CC"
+when
+    $customer: Customer(
+        customerType == "SOLO_CC"
+    )
+then
+    customerSegmentId.add(2);
+    modify($customer) {
+        setCustomerSegmentId(customerSegmentId);
+    }
+end

@@ -1,0 +1,7 @@
+.vscode/
+*.dylib
+.DS_Store
+/tmp/
+
+.idea
+

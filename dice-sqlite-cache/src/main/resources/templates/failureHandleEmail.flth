@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>${title}</title>
+    </head>
+
+    <body>
+        <div style="font-size:16px; padding-top: 20px">
+            Hello,
+            <br/><br/>
+            This is an automated alert to inform you that the ETL process has encountered a failure during the data loading from DB2 to SQLite. Please find below the details of the failed ETL process:
+            <br/><br/>
+            <strong>Error Detail:</strong>
+            <br/>
+            Event Type : Load Data To DB2 - ${eventType}
+	        <br/>
+	        Process Start Time : ${processStartTime}
+	        <br/>
+	        Process End Time : ${processEndTime}
+            <br/>
+	        Process Duration : ${duration} ms
+            <br/>
+	        Exception : ${exception}
+            <br/><br/>
+            If you have any questions or concerns, please contact the system administrator for assistance.
+            <br/><br/>
+            Best regards,<br/>
+            DICE
+        </div>
+    </body>
+</html>

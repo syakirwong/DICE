@@ -1,0 +1,34 @@
+2023-05-10 16:00:34.014  WARN 33480 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/mohds/.m2/repository/org/json/json/20090211/json-20090211.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/mohds/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2023-05-10 16:00:34.041  INFO 33480 --- [main] c.a.d.DiceRuleEngineApplicationTests     : Starting DiceRuleEngineApplicationTests using Java 19.0.2 on DESKTOP-PSRTDJ0 with PID 33480 (started by mohds in C:\Users\mohds\Documents\alliance\dice\dice-rule-engine)
+2023-05-10 16:00:34.042  INFO 33480 --- [main] c.a.d.DiceRuleEngineApplicationTests     : No active profile set, falling back to default profiles: default
+2023-05-10 16:00:34.856  INFO 33480 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-10 16:00:34.857  INFO 33480 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Cassandra repositories in DEFAULT mode.
+2023-05-10 16:00:34.917  INFO 33480 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 3 Cassandra repository interfaces.
+2023-05-10 16:00:35.079  INFO 33480 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-10 16:00:35.079  INFO 33480 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Cassandra repositories in DEFAULT mode.
+2023-05-10 16:00:35.090  INFO 33480 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Reactive Cassandra repository interfaces.
+2023-05-10 16:00:35.107  INFO 33480 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-10 16:00:35.109  INFO 33480 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-10 16:00:35.126  INFO 33480 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.alliance.diceruleengine.repository.CustomerSegmentationTemplateRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2023-05-10 16:00:35.128  INFO 33480 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.alliance.diceruleengine.repository.RuleRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2023-05-10 16:00:35.130  INFO 33480 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.alliance.diceruleengine.repository.RuleTemplateRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2023-05-10 16:00:35.130  INFO 33480 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces.
+2023-05-10 16:00:35.869  INFO 33480 --- [main] c.d.o.d.internal.core.ContactPoints      : Contact point localhost:9042 resolves to multiple addresses, will use them all ([localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1])
+2023-05-10 16:00:35.994  INFO 33480 --- [main] c.d.o.d.i.core.DefaultMavenCoordinates   : DataStax Java driver for Apache Cassandra(R) (com.datastax.oss:java-driver-core) version 4.11.3
+2023-05-10 16:00:36.569  INFO 33480 --- [s0-admin-0] c.d.oss.driver.internal.core.time.Clock  : Using native clock for microsecond precision
+2023-05-10 16:00:36.842  WARN 33480 --- [s0-io-2] c.d.o.d.a.c.a.PlainTextAuthProviderBase  : [] localhost/[0:0:0:0:0:0:0:1]:9042 did not send an authentication challenge; This is suspicious because the driver expects authentication
+2023-05-10 16:00:36.954  WARN 33480 --- [s0-admin-0] c.d.o.d.i.c.l.h.OptionalLocalDcHelper    : [s0|default] You specified datacenter1 as the local DC, but some contact points are from a different DC: Node(endPoint=localhost/127.0.0.1:9042, hostId=null, hashCode=6866d488)=null; please provide the correct local DC, or check your contact points
+2023-05-10 16:00:36.968  WARN 33480 --- [s0-io-3] c.d.o.d.a.c.a.PlainTextAuthProviderBase  : [] localhost/[0:0:0:0:0:0:0:1]:9042 did not send an authentication challenge; This is suspicious because the driver expects authentication
+2023-05-10 16:00:38.153  INFO 33480 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-05-10 16:00:38.794  INFO 33480 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2023-05-10 16:00:38.817  INFO 33480 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2023-05-10 16:00:38.851  INFO 33480 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2023-05-10 16:00:39.011  INFO 33480 --- [main] c.a.d.DiceRuleEngineApplicationTests     : Started DiceRuleEngineApplicationTests in 5.36 seconds (JVM running for 6.604)

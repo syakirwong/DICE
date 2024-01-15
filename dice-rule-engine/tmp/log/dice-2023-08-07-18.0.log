@@ -1,0 +1,58 @@
+2023-08-07 18:01:23.384  WARN 2255 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/syakirwong/.m2/repository/org/json/json/20090211/json-20090211.jar!/org/json/JSONObject.class
+	jar:file:/Users/syakirwong/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2023-08-07 18:01:23.398  INFO 2255 --- [main] c.a.d.DiceRuleEngineApplicationTests     : Starting DiceRuleEngineApplicationTests using Java 20.0.1 on Syakirs-MacBook-Pro.local with PID 2255 (started by syakirwong in /Users/syakirwong/Documents/alliance-dice/dice-rule-engine)
+2023-08-07 18:01:23.398  INFO 2255 --- [main] c.a.d.DiceRuleEngineApplicationTests     : No active profile set, falling back to default profiles: default
+2023-08-07 18:01:23.701  INFO 2255 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-08-07 18:01:23.702  INFO 2255 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Cassandra repositories in DEFAULT mode.
+2023-08-07 18:01:23.722  INFO 2255 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 6 Cassandra repository interfaces.
+2023-08-07 18:01:23.795  INFO 2255 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-08-07 18:01:23.795  INFO 2255 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Cassandra repositories in DEFAULT mode.
+2023-08-07 18:01:23.800  INFO 2255 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Reactive Cassandra repository interfaces.
+2023-08-07 18:01:24.276  INFO 2255 --- [main] c.d.o.d.internal.core.ContactPoints      : Contact point localhost:9042 resolves to multiple addresses, will use them all ([localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1])
+2023-08-07 18:01:24.328  INFO 2255 --- [main] c.d.o.d.i.core.DefaultMavenCoordinates   : DataStax Java driver for Apache Cassandra(R) (com.datastax.oss:java-driver-core) version 4.11.3
+2023-08-07 18:01:24.422  INFO 2255 --- [s0-admin-0] c.d.oss.driver.internal.core.time.Clock  : Could not access native clock (see debug logs for details), falling back to Java system clock
+2023-08-07 18:01:24.603  WARN 2255 --- [s0-io-2] c.d.o.d.a.c.a.PlainTextAuthProviderBase  : [] localhost/[0:0:0:0:0:0:0:1]:9042 did not send an authentication challenge; This is suspicious because the driver expects authentication
+2023-08-07 18:01:24.796  WARN 2255 --- [s0-admin-0] c.d.o.d.i.c.l.h.OptionalLocalDcHelper    : [s0|default] You specified datacenter1 as the local DC, but some contact points are from a different DC: Node(endPoint=localhost/127.0.0.1:9042, hostId=null, hashCode=251642f7)=null; please provide the correct local DC, or check your contact points
+2023-08-07 18:01:24.810  WARN 2255 --- [s0-io-3] c.d.o.d.a.c.a.PlainTextAuthProviderBase  : [] localhost/[0:0:0:0:0:0:0:1]:9042 did not send an authentication challenge; This is suspicious because the driver expects authentication
+2023-08-07 18:01:25.924  INFO 2255 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-08-07 18:01:26.146  INFO 2255 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2023-08-07 18:01:26.154  INFO 2255 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2023-08-07 18:01:26.163  INFO 2255 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2023-08-07 18:01:26.221  INFO 2255 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createEngagementModeTemplateUsingPOST_1
+2023-08-07 18:01:26.252  INFO 2255 --- [main] c.a.d.DiceRuleEngineApplicationTests     : Started DiceRuleEngineApplicationTests in 3.006 seconds (JVM running for 3.439)
+2023-08-07 18:10:28.698  WARN 4595 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/syakirwong/.m2/repository/org/json/json/20090211/json-20090211.jar!/org/json/JSONObject.class
+	jar:file:/Users/syakirwong/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2023-08-07 18:10:28.706  INFO 4595 --- [main] c.a.d.DiceRuleEngineApplicationTests     : Starting DiceRuleEngineApplicationTests using Java 20.0.1 on Syakirs-MacBook-Pro.local with PID 4595 (started by syakirwong in /Users/syakirwong/Documents/alliance-dice/dice-rule-engine)
+2023-08-07 18:10:28.706  INFO 4595 --- [main] c.a.d.DiceRuleEngineApplicationTests     : No active profile set, falling back to default profiles: default
+2023-08-07 18:10:29.003  INFO 4595 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-08-07 18:10:29.003  INFO 4595 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Cassandra repositories in DEFAULT mode.
+2023-08-07 18:10:29.022  INFO 4595 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 6 Cassandra repository interfaces.
+2023-08-07 18:10:29.094  INFO 4595 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-08-07 18:10:29.094  INFO 4595 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Cassandra repositories in DEFAULT mode.
+2023-08-07 18:10:29.098  INFO 4595 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Reactive Cassandra repository interfaces.
+2023-08-07 18:10:29.398  INFO 4595 --- [main] c.d.o.d.internal.core.ContactPoints      : Contact point localhost:9042 resolves to multiple addresses, will use them all ([localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1])
+2023-08-07 18:10:29.441  INFO 4595 --- [main] c.d.o.d.i.core.DefaultMavenCoordinates   : DataStax Java driver for Apache Cassandra(R) (com.datastax.oss:java-driver-core) version 4.11.3
+2023-08-07 18:10:29.534  INFO 4595 --- [s0-admin-0] c.d.oss.driver.internal.core.time.Clock  : Could not access native clock (see debug logs for details), falling back to Java system clock
+2023-08-07 18:10:29.642  WARN 4595 --- [s0-io-2] c.d.o.d.a.c.a.PlainTextAuthProviderBase  : [] localhost/127.0.0.1:9042 did not send an authentication challenge; This is suspicious because the driver expects authentication
+2023-08-07 18:10:29.743  WARN 4595 --- [s0-admin-0] c.d.o.d.i.c.l.h.OptionalLocalDcHelper    : [s0|default] You specified datacenter1 as the local DC, but some contact points are from a different DC: Node(endPoint=localhost/[0:0:0:0:0:0:0:1]:9042, hostId=null, hashCode=4f545f02)=null; please provide the correct local DC, or check your contact points
+2023-08-07 18:10:29.751  WARN 4595 --- [s0-io-3] c.d.o.d.a.c.a.PlainTextAuthProviderBase  : [] localhost/127.0.0.1:9042 did not send an authentication challenge; This is suspicious because the driver expects authentication
+2023-08-07 18:10:30.767  INFO 4595 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-08-07 18:10:31.005  INFO 4595 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2023-08-07 18:10:31.016  INFO 4595 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2023-08-07 18:10:31.027  INFO 4595 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2023-08-07 18:10:31.090  INFO 4595 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createEngagementModeTemplateUsingPOST_1
+2023-08-07 18:10:31.118  INFO 4595 --- [main] c.a.d.DiceRuleEngineApplicationTests     : Started DiceRuleEngineApplicationTests in 2.856 seconds (JVM running for 3.276)

@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>${title}</title>
+    </head>
+
+    <body>
+        <div style="font-size:16px; padding-top: 20px">
+            Hello,
+            <br/><br/>
+            This is an automated alert to inform you that the request has reached the maximum number of fail retries. Please find below the request detail:
+            <br/><br/>
+            <strong>Request Detail:</strong>
+            <br/>
+            Http Status Code : ${statusCode}
+	        <br/>
+	        End Point URL : ${endPointURL}
+	        <br/>
+	        Request Status : ${requestStatus}
+            <br/>
+	        Message : ${message}
+            <br/><br/>
+            If you have any questions or concerns, please contact the system administrator for assistance.
+            <br/><br/>
+            Best regards,<br/>
+            DDM
+        </div>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>${title}</title>
+</head>
+
+<body style="font-family: Arial, sans-serif; line-height: 1.6;">
+<div style="width: 80%; margin: 0 auto; padding: 20px;">
+    <p>Dear Team,</p>
+
+    <p style="color: #f44336"><strong>Alert: ETL Batch Job Failure</strong></p>
+
+    <p>This is an automated notification to inform you of a failure in the DICE ETL Batch
+        processing. Please review the following details regarding the incident:</p>
+
+    <div style="margin-bottom: 10px;">
+        <strong>Error Summary:</strong>
+        <ul>
+            <li>Event Type:<span style="color: grey"> ETL Batch Job - </span><span style="color: grey">${eventType}</span></li>
+            <li>Process Start Time: <span style="color: grey">${processStartTime}</span></li>
+            <li>Process End Time: <span style="color: grey">${processEndTime}</span></li>
+            <li>Duration: <span style="color: grey">${duration}</span></li>
+            <li><span style="color: #f44336;font-weight: bold">Failure Reason: </span><span style="color: #f44336">${failureReason}</span></li>
+            <li><span style="color: #f44336;font-weight: bold">Error Description: </span><span style="color: #f44336">${exception}</span></li>
+            <li><span style="color: #2196f3;font-weight: bold">Data Processed: </span><span style="color: #2196f3">${dataProcessed}</span></li>
+        </ul>
+    </div>
+
+    <div style="margin-bottom: 10px;">
+        <strong>Immediate Actions:</strong>
+        <ul>
+            <li>Please review the ETL process logs for detailed error information.</li>
+        </ul>
+    </div>
+
+    <div style="margin-bottom: 10px;">
+        <strong>Further Assistance:</strong>
+        <p>If you require immediate support or have any questions, please do not hesitate to contact the system
+            administrator for assistance.</p>
+    </div>
+
+    <p style="font-size: 0.9em; margin-top: 50px">
+        Best regards,<br>
+        DICE
+    </p>
+</div>
+</body>
+
+</html>

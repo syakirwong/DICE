@@ -1,0 +1,41 @@
+import com.alliance.diceruleengine.model.Campaign;
+import com.alliance.diceruleengine.model.Customer;
+import com.alliance.diceruleengine.constant.DataField;
+import java.util.Set;
+import java.util.HashSet;
+import java.lang.Integer;
+import java.util.List;
+
+global java.util.List campaignList;
+
+global String savePlusReferralCampaignName;
+global String soloCcCampaignName;
+global String ploanCampaignName;
+
+
+rule "Campaign Rule"
+when
+    // $customerSegmentTemplateId: String($customerSegmentTemplateId == "1,2")
+    $customer: Customer()
+    $campaignList: List() from collect(Object())
+
+    // $campaignList: $campaignList
+    // $campaign: Campaign($campaignStatus: campaignStatus)
+    // eval($campaignStatus == DataField.Status.ACTIVE)
+then
+    // Perform actions for matching campaigns
+    Set<String> campaignName = new HashSet<String>();
+    campaignName.add(savePlusReferralCampaignName);
+    campaignName.add(ploanCampaignName);
+    $customer.setCampaignName(campaignName);
+end
+
+rule "Solo CC Customer"
+when
+    $customer: Customer(customerType == "SOLO_CC")
+then
+    Set<String> campaignName = new HashSet<String>();
+    campaignName.add(soloCcCampaignName);
+    campaignName.add(ploanCampaignName);
+    $customer.setCampaignName(campaignName);
+end

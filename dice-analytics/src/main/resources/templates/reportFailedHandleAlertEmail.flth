@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>${title}</title>
+    </head>
+
+    <body>
+        <div style="font-size:16px; padding-top: 20px">
+            Hello,
+            <br/><br/>
+            This is an automated alert to inform you that the report generation has failed the maximum number of fail retries. Please find below the request detail:
+            <br/><br/>
+            <strong>Report Details:</strong>
+            <br/><br/>
+            Report Name : ${reportName}
+            <br/><br/>
+	        Report Generation Date: ${generationDate}
+            <br/><br/>
+	        Report Frequency : ${frequency}
+            <br/><br/>
+	        Error Message : ${message}
+            <br/><br/>
+            If you have any questions or concerns, please contact the system administrator for assistance.
+            <br/><br/>
+            Best regards,<br/>
+            DICE
+        </div>
+    </body>
+</html>

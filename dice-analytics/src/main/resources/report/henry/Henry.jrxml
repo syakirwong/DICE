@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Henry" pageWidth="1000" pageHeight="595" orientation="Landscape" columnWidth="1000" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" isIgnorePagination="true" uuid="9ad29abe-656c-4e84-bf69-f3df089c59ce">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Henry JSON Adapter"/>
+	<property name="com.jaspersoft.jrs.export.xls.paginated" value="false"/>
+	<property name="com.jaspersoft.jrs.export.xlsx.paginated" value="false"/>
+	<property name="net.sf.jasperreports.export.xls.remove.empty.space.between.rows" value="true"/>
+	<property name="net.sf.jasperreports.export.xls.remove.empty.space.between.columns" value="true"/>
+	<property name="net.sf.jasperreports.export.xls.white.page.background" value="false"/>
+	<property name="net.sf.jasperreports.awt.ignore.missing.font" value="true"/>
+
+
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab_CG" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab_CT" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab_CD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="PerformanceReport" uuid="ef11aff5-1b34-4ad6-a8ed-dd93e4c2ac1d">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Henry JSON Adapter"/>
+		<parameter name="ReportCount" class="java.lang.String">
+			<defaultValueExpression><![CDATA[500]]></defaultValueExpression>
+		</parameter>
+		<queryString language="jsonql">
+			<![CDATA[ReportData.data_1]]>
+		</queryString>
+		<field name="engagementMode" class="java.lang.String">
+			<property name="net.sf.jasperreports.jsonql.field.expression" value="engagementMode"/>
+			<property name="net.sf.jasperreports.json.field.expression" value="engagementMode"/>
+			<fieldDescription><![CDATA[engagementMode]]></fieldDescription>
+		</field>
+		<field name="noOfBetterOffers" class="java.lang.Integer">
+			<property name="net.sf.jasperreports.jsonql.field.expression" value="noOfBetterOffers"/>
+			<property name="net.sf.jasperreports.json.field.expression" value="noOfBetterOffers"/>
+			<fieldDescription><![CDATA[noOfBetterOffers]]></fieldDescription>
+		</field>
+		<field name="noOfClicksOthers" class="java.lang.Integer">
+			<property name="net.sf.jasperreports.jsonql.field.expression" value="noOfClicksOthers"/>
+			<property name="net.sf.jasperreports.json.field.expression" value="noOfClicksOthers"/>
+			<fieldDescription><![CDATA[noOfClicksOthers]]></fieldDescription>
+		</field>
+		<field name="noOfInAppPromoRedirection" class="java.lang.Integer">
+			<property name="net.sf.jasperreports.jsonql.field.expression" value="noOfInAppPromoRedirection"/>
+			<property name="net.sf.jasperreports.json.field.expression" value="noOfInAppPromoRedirection"/>
+			<fieldDescription><![CDATA[noOfInAppPromoRedirection]]></fieldDescription>
+		</field>
+		<field name="noOfMinimumThresholdTooHigh" class="java.lang.Integer">
+			<property name="net.sf.jasperreports.jsonql.field.expression" value="noOfMinimumThresholdTooHigh"/>
+			<property name="net.sf.jasperreports.json.field.expression" value="noOfMinimumThresholdTooHigh"/>
+			<fieldDescription><![CDATA[noOfMinimumThresholdTooHigh]]></fieldDescription>
+		</field>
+		<field name="noOfNoAvailableFunds" class="java.lang.Integer">
+			<property name="net.sf.jasperreports.jsonql.field.expression" value="noOfNoAvailableFunds"/>
+			<property name="net.sf.jasperreports.json.field.expression" value="noOfNoAvailableFunds"/>
+			<fieldDescription><![CDATA[noOfNoAvailableFunds]]></fieldDescription>
+		</field>
+		<field name="noOfNoImStillConsidering" class="java.lang.Integer">
+			<property name="net.sf.jasperreports.jsonql.field.expression" value="noOfNoImStillConsidering"/>
+			<property name="net.sf.jasperreports.json.field.expression" value="noOfNoImStillConsidering"/>
+			<fieldDescription><![CDATA[noOfNoImStillConsidering]]></fieldDescription>
+		</field>
+		<field name="noOfPromoNotAttractive" class="java.lang.Integer">
+			<property name="net.sf.jasperreports.jsonql.field.expression" value="noOfPromoNotAttractive"/>
+			<property name="net.sf.jasperreports.json.field.expression" value="noOfPromoNotAttractive"/>
+			<fieldDescription><![CDATA[noOfPromoNotAttractive]]></fieldDescription>
+		</field>
+		<field name="noOfYesPlsContactMe" class="java.lang.Integer">
+			<property name="net.sf.jasperreports.jsonql.field.expression" value="noOfYesPlsContactMe"/>
+			<property name="net.sf.jasperreports.json.field.expression" value="noOfYesPlsContactMe"/>
+			<fieldDescription><![CDATA[noOfYesPlsContactMe]]></fieldDescription>
+		</field>
+		<field name="noOfTargetedCustomer" class="java.lang.Integer">
+			<property name="net.sf.jasperreports.jsonql.field.expression" value="noOfTargetedCustomer"/>
+			<fieldDescription><![CDATA[noOfTargetedCustomer]]></fieldDescription>
+		</field>
+		<variable name="NoColGroup" class="java.lang.String"/>
+		<group name="engagementMode">
+			<groupExpression><![CDATA[$F{engagementMode}]]></groupExpression>
+		</group>
+		<group name="noOfInAppPromoRedirection">
+			<groupExpression><![CDATA[$F{noOfInAppPromoRedirection}]]></groupExpression>
+		</group>
+		<group name="noOfYesPlsContactMe">
+			<groupExpression><![CDATA[$F{noOfYesPlsContactMe}]]></groupExpression>
+		</group>
+		<group name="noOfNoImStillConsidering">
+			<groupExpression><![CDATA[$F{noOfNoImStillConsidering}]]></groupExpression>
+		</group>
+		<group name="noOfNoAvailableFunds">
+			<groupExpression><![CDATA[$F{noOfNoAvailableFunds}]]></groupExpression>
+		</group>
+		<group name="noOfPromoNotAttractive">
+			<groupExpression><![CDATA[$F{noOfPromoNotAttractive}]]></groupExpression>
+		</group>
+		<group name="noOfBetterOffers">
+			<groupExpression><![CDATA[$F{noOfBetterOffers}]]></groupExpression>
+		</group>
+		<group name="noOfMinimumThresholdTooHigh">
+			<groupExpression><![CDATA[$F{noOfMinimumThresholdTooHigh}]]></groupExpression>
+		</group>
+		<group name="noOfClicksOthers">
+			<groupExpression><![CDATA[$F{noOfClicksOthers}]]></groupExpression>
+		</group>
+	</subDataset>
+	<subDataset name="Metadata_Weekly" uuid="079c2fc1-cab5-4b49-8665-b94091be65c5">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Henry JSON Adapter"/>
+		<queryString language="jsonql">
+			<![CDATA[ReportData.metadata]]>
+		</queryString>
+		<field name="reportEndDate" class="java.lang.String">
+			<property name="net.sf.jasperreports.jsonql.field.expression" value="reportEndDate"/>
+			<fieldDescription><![CDATA[reportEndDate]]></fieldDescription>
+		</field>
+		<field name="reportStartDate" class="java.lang.String">
+			<property name="net.sf.jasperreports.jsonql.field.expression" value="reportStartDate"/>
+			<fieldDescription><![CDATA[reportStartDate]]></fieldDescription>
+		</field>
+		<field name="reportRunDate" class="java.lang.String">
+			<property name="net.sf.jasperreports.jsonql.field.expression" value="reportRunDate"/>
+			<fieldDescription><![CDATA[reportRunDate]]></fieldDescription>
+		</field>
+		<field name="reportName" class="java.lang.String">
+			<property name="net.sf.jasperreports.jsonql.field.expression" value="reportName"/>
+			<fieldDescription><![CDATA[reportName]]></fieldDescription>
+		</field>
+	</subDataset>
+	<queryString language="jsonql">
+		<![CDATA[ReportData]]>
+	</queryString>
+	<field name="metadata" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="metadata"/>
+		<fieldDescription><![CDATA[metadata]]></fieldDescription>
+	</field>
+	<field name="data_1" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data_1"/>
+		<fieldDescription><![CDATA[data_1]]></fieldDescription>
+	</field>
+	<field name="data_2" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data_2"/>
+		<fieldDescription><![CDATA[data_2]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="40">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.HorizontalRowLayout"/>
+			<staticText>
+				<reportElement x="0" y="0" width="1000" height="40" uuid="af248a3c-a09d-47f4-b371-e099f531fa6b">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Calibri" size="14" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[e-FD Campaign with Special Rates to Convert High Earners Not Rich Yet (HENRY) Customer to Alliance Privilege / Alliance Personal]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="54">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<componentElement>
+				<reportElement x="0" y="0" width="1000" height="54" uuid="3c3fc8ed-f7c7-4d08-8f1c-8ba42b7b31ca">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<jr:list xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" printOrder="Vertical">
+					<datasetRun subDataset="Metadata_Weekly" uuid="53ace5d4-72be-47dc-a296-5b7cebdcc371">
+						<datasetParameter name="JSON_INPUT_STREAM">
+							<datasetParameterExpression><![CDATA[$P{JSON_INPUT_STREAM}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="net.sf.jasperreports.json.source">
+							<datasetParameterExpression><![CDATA[$P{net.sf.jasperreports.json.source}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="net.sf.jasperreports.json.sources">
+							<datasetParameterExpression><![CDATA[$P{net.sf.jasperreports.json.sources}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="net.sf.jasperreports.json.date.pattern">
+							<datasetParameterExpression><![CDATA[$P{net.sf.jasperreports.json.date.pattern}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="net.sf.jasperreports.json.number.pattern">
+							<datasetParameterExpression><![CDATA[$P{net.sf.jasperreports.json.number.pattern}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="JSON_LOCALE">
+							<datasetParameterExpression><![CDATA[$P{JSON_LOCALE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="net.sf.jasperreports.json.locale.code">
+							<datasetParameterExpression><![CDATA[$P{net.sf.jasperreports.json.locale.code}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="JSON_TIME_ZONE">
+							<datasetParameterExpression><![CDATA[$P{JSON_TIME_ZONE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="net.sf.jasperreports.json.timezone.id">
+							<datasetParameterExpression><![CDATA[$P{net.sf.jasperreports.json.timezone.id}]]></datasetParameterExpression>
+						</datasetParameter>
+						<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JsonQLDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("metadata")]]></dataSourceExpression>
+					</datasetRun>
+					<jr:listContents height="54" width="1000">
+						<textField>
+							<reportElement x="0" y="0" width="1000" height="18" uuid="be83f15b-d30f-490f-ba0e-0bb31a6a41fd"/>
+							<textElement>
+								<font fontName="Calibri" size="9" isBold="true"/>
+							</textElement>
+							<textFieldExpression><![CDATA["Report ID/Name :" +$F{reportName}]]></textFieldExpression>
+						</textField>
+						<textField>
+							<reportElement x="0" y="18" width="1000" height="18" uuid="dce73739-35b8-4bf6-aceb-ec4237f0410f"/>
+							<textElement>
+								<font fontName="Calibri" size="9" isBold="true"/>
+							</textElement>
+							<textFieldExpression><![CDATA["Duration: " + $F{reportStartDate} + " to " + $F{reportEndDate}]]></textFieldExpression>
+						</textField>
+						<textField>
+							<reportElement x="0" y="36" width="1000" height="18" uuid="2adcab05-4aaf-4791-a8e3-643c52608eab"/>
+							<textElement>
+								<font fontName="Calibri" size="9" isBold="true"/>
+							</textElement>
+							<textFieldExpression><![CDATA["Report Run Date: " + $F{reportRunDate}]]></textFieldExpression>
+						</textField>
+					</jr:listContents>
+				</jr:list>
+			</componentElement>
+		</band>
+		<band height="20">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.HorizontalRowLayout"/>
+			<staticText>
+				<reportElement x="0" y="0" width="1000" height="20" uuid="38a17ca4-4175-46fd-becf-9bfbcbd1b9e3"/>
+				<textElement>
+					<font fontName="Calibri" size="6"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+		</band>
+		<band height="120">
+			<crosstab isRepeatColumnHeaders="false" isRepeatRowHeaders="false">
+				<reportElement isPrintRepeatedValues="false" x="0" y="3" width="1000" height="115" uuid="d0368457-e574-44f1-812d-a7550aae1309">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.crosstab.style.header" value="Crosstab_CH"/>
+					<property name="com.jaspersoft.studio.crosstab.style.group" value="Crosstab_CG"/>
+					<property name="com.jaspersoft.studio.crosstab.style.total" value="Crosstab_CT"/>
+					<property name="com.jaspersoft.studio.crosstab.style.detail" value="Crosstab_CD"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<crosstabDataset>
+					<dataset resetType="Report">
+						<datasetRun subDataset="PerformanceReport" uuid="41863adc-7a8b-4c1f-a339-95384ec9c348">
+							<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JsonQLDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("data_1")]]></dataSourceExpression>
+						</datasetRun>
+					</dataset>
+				</crosstabDataset>
+				<crosstabHeaderCell>
+					<cellContents mode="Opaque" style="Crosstab_CD">
+						<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<staticText>
+							<reportElement x="0" y="0" width="100" height="60" uuid="6c12b556-6eb2-4135-9e70-808db85e659a">
+								<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							</reportElement>
+							<box>
+								<pen lineWidth="0.5"/>
+								<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle">
+								<font fontName="Calibri" size="9" isBold="true"/>
+							</textElement>
+							<text><![CDATA[No. of Targeted Customer]]></text>
+						</staticText>
+						<staticText>
+							<reportElement x="100" y="0" width="140" height="60" uuid="55e0d7b7-200f-47f2-ad81-01722d01262b">
+								<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							</reportElement>
+							<box>
+								<pen lineWidth="0.5"/>
+								<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textElement textAlignment="Center" verticalAlignment="Middle">
+								<font fontName="Calibri" size="9" isBold="true"/>
+							</textElement>
+							<text><![CDATA[Engagement Mode]]></text>
+						</staticText>
+					</cellContents>
+				</crosstabHeaderCell>
+				<rowGroup name="noOfTargetedCustomer" width="100" headerPosition="Middle">
+					<bucket class="java.lang.Integer">
+						<bucketExpression><![CDATA[$F{noOfTargetedCustomer}]]></bucketExpression>
+					</bucket>
+					<crosstabRowHeader>
+						<cellContents mode="Opaque" style="Crosstab_CH">
+							<textField>
+								<reportElement x="0" y="0" width="100" height="40" uuid="819ad801-6c00-4018-bdd0-e1959cc22972"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Calibri"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$V{noOfTargetedCustomer}]]></textFieldExpression>
+							</textField>
+						</cellContents>
+					</crosstabRowHeader>
+					<crosstabTotalRowHeader>
+						<cellContents mode="Opaque" style="Crosstab_CG">
+							<staticText>
+								<reportElement x="0" y="0" width="240" height="20" uuid="c73d2fdf-cb69-4ff0-b35f-9e4756780455"/>
+								<text><![CDATA[Total noOfTargetedCustomer]]></text>
+							</staticText>
+						</cellContents>
+					</crosstabTotalRowHeader>
+				</rowGroup>
+				<rowGroup name="engagementMode" width="140">
+					<bucket order="None" class="java.lang.String">
+						<bucketExpression><![CDATA[$F{engagementMode}]]></bucketExpression>
+					</bucket>
+					<crosstabRowHeader>
+						<cellContents mode="Opaque" style="Crosstab_CH">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+							<textField>
+								<reportElement x="0" y="0" width="140" height="40" uuid="518f9245-61ba-4cdb-bddf-11ad96ea0a7e"/>
+								<box>
+									<pen lineWidth="0.5"/>
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Calibri"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$V{engagementMode}]]></textFieldExpression>
+							</textField>
+						</cellContents>
+					</crosstabRowHeader>
+					<crosstabTotalRowHeader>
+						<cellContents mode="Opaque" style="Crosstab_CG">
+							<staticText>
+								<reportElement x="0" y="0" width="0" height="0" uuid="e9388735-03dd-4f4c-8884-a00ecd5f5d23"/>
+								<text><![CDATA[Total engagementMode]]></text>
+							</staticText>
+						</cellContents>
+					</crosstabTotalRowHeader>
+				</rowGroup>
+				<columnGroup name="NoColGroup" height="60">
+					<bucket class="java.lang.String">
+						<bucketExpression><![CDATA[$V{NoColGroup}]]></bucketExpression>
+					</bucket>
+					<crosstabColumnHeader>
+						<cellContents mode="Opaque" style="Crosstab_CH">
+							<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+							<property name="com.jaspersoft.studio.unit.height" value="px"/>
+							<frame>
+								<reportElement x="0" y="0" width="285" height="60" uuid="41d1db50-1384-4325-a538-7fef394f705b">
+									<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.HorizontalRowLayout"/>
+									<property name="com.jaspersoft.studio.unit.width" value="px"/>
+								</reportElement>
+								<box>
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<staticText>
+									<reportElement x="0" y="0" width="95" height="60" uuid="ed222cdf-d810-43a9-a331-fb8ce438addd">
+										<property name="com.jaspersoft.studio.unit.width" value="px"/>
+									</reportElement>
+									<box>
+										<pen lineWidth="0.5"/>
+										<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									</box>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font fontName="Calibri" size="9" isBold="true"/>
+									</textElement>
+									<text><![CDATA[No. of In-app promo redirection]]></text>
+								</staticText>
+								<staticText>
+									<reportElement x="95" y="0" width="95" height="60" uuid="3d2d6968-438e-48bb-ba90-b8dab76740fa">
+										<property name="com.jaspersoft.studio.unit.width" value="px"/>
+									</reportElement>
+									<box>
+										<pen lineWidth="0.5"/>
+										<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+										<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+									</box>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font fontName="Calibri" size="9" isBold="true"/>
+									</textElement>
+									<text><![CDATA[No. of Click for "Yes, Please Contact Me"]]></text>
+								</staticText>
+								<staticText>
+									<reportElement x="190" y="0" width="95" height="60" uuid="2fb1456f-c839-429b-974c-ddbf76d6a98b">
+										<property name="com.jaspersoft.studio.unit.width" value="px"/>
+									</reportElement>
+									<box>
+										<pen lineWidth="0.5"/>
+										<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+										<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+									</box>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font fontName="Calibri" size="9" isBold="true"/>
+									</textElement>
+									<text><![CDATA[No. of clicks "No, I'm Still Considering"]]></text>
+								</staticText>
+							</frame>
+							<frame>
+								<reportElement x="285" y="0" width="475" height="60" uuid="9bb86459-90f4-4826-b085-5e9e5c51c59f">
+									<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+									<property name="com.jaspersoft.studio.unit.height" value="px"/>
+									<property name="com.jaspersoft.studio.unit.x" value="px"/>
+									<property name="com.jaspersoft.studio.unit.width" value="px"/>
+									<property name="com.jaspersoft.studio.unit.y" value="px"/>
+								</reportElement>
+								<box>
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<staticText>
+									<reportElement x="0" y="0" width="475" height="15" uuid="fc0cc3f5-79ea-42d6-9152-cff0156d7135">
+										<property name="com.jaspersoft.studio.unit.height" value="px"/>
+										<property name="com.jaspersoft.studio.unit.width" value="px"/>
+									</reportElement>
+									<box>
+										<pen lineWidth="0.5"/>
+										<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+										<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									</box>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font fontName="Calibri" size="6"/>
+									</textElement>
+									<text><![CDATA[Reason Of Still Considering]]></text>
+								</staticText>
+								<frame>
+									<reportElement x="0" y="15" width="475" height="45" uuid="6d99ed97-5cfd-4ca3-8f0a-ba0d46e1d286">
+										<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.HorizontalRowLayout"/>
+										<property name="com.jaspersoft.studio.unit.height" value="px"/>
+										<property name="com.jaspersoft.studio.unit.width" value="px"/>
+									</reportElement>
+									<box>
+										<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									</box>
+									<staticText>
+										<reportElement x="0" y="0" width="95" height="45" uuid="1dfa92fe-14a0-470f-8c65-f60d9b6aded3"/>
+										<box>
+											<pen lineWidth="0.5"/>
+											<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Calibri" size="9" isBold="true"/>
+										</textElement>
+										<text><![CDATA[No. of clicks "No available funds"]]></text>
+									</staticText>
+									<staticText>
+										<reportElement x="95" y="0" width="95" height="45" uuid="8ecc36af-dcc3-493b-a6b8-048f2a99a0bd"/>
+										<box>
+											<pen lineWidth="0.5"/>
+											<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Calibri" size="9" isBold="true"/>
+										</textElement>
+										<text><![CDATA[No. of clicks "Promo not attractive"]]></text>
+									</staticText>
+									<staticText>
+										<reportElement x="190" y="0" width="95" height="45" uuid="1e23e093-ca99-448e-a944-0df019e9e2d6"/>
+										<box>
+											<pen lineWidth="0.5"/>
+											<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Calibri" size="9" isBold="true"/>
+										</textElement>
+										<text><![CDATA[No. of clicks "Better Offers"]]></text>
+									</staticText>
+									<staticText>
+										<reportElement x="285" y="0" width="95" height="45" uuid="8724b888-32fb-4829-b75d-b4ce2a72f46b"/>
+										<box>
+											<pen lineWidth="0.5"/>
+											<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Calibri" size="9" isBold="true"/>
+										</textElement>
+										<text><![CDATA[No. of clicks "Minimum Threshold too high"]]></text>
+									</staticText>
+									<staticText>
+										<reportElement x="380" y="0" width="95" height="45" uuid="60f11d6f-18ec-4eb2-b499-4fe14c83a210"/>
+										<box>
+											<pen lineWidth="0.5"/>
+											<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+											<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+											<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+											<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font fontName="Calibri" size="9" isBold="true"/>
+										</textElement>
+										<text><![CDATA[No. of clicks "Others"]]></text>
+									</staticText>
+								</frame>
+							</frame>
+						</cellContents>
+					</crosstabColumnHeader>
+					<crosstabTotalColumnHeader>
+						<cellContents mode="Opaque" style="Crosstab_CT">
+							<staticText>
+								<reportElement x="0" y="0" width="0" height="0" uuid="44899d11-8d32-4473-933e-2d51e46cd8df"/>
+								<text><![CDATA[Total NoColGroup]]></text>
+							</staticText>
+						</cellContents>
+					</crosstabTotalColumnHeader>
+				</columnGroup>
+				<measure name="noOfInAppPromoRedirection_MEASURE" class="java.lang.Integer" calculation="Sum">
+					<measureExpression><![CDATA[$F{noOfInAppPromoRedirection}]]></measureExpression>
+				</measure>
+				<measure name="noOfYesPlsContactMe_MEASURE" class="java.lang.Integer" calculation="Sum">
+					<measureExpression><![CDATA[$F{noOfYesPlsContactMe}]]></measureExpression>
+				</measure>
+				<measure name="noOfNoImStillConsidering_MEASURE" class="java.lang.Integer" calculation="Sum">
+					<measureExpression><![CDATA[$F{noOfNoImStillConsidering}]]></measureExpression>
+				</measure>
+				<measure name="noOfNoAvailableFunds_MEASURE" class="java.lang.Integer" calculation="Sum">
+					<measureExpression><![CDATA[$F{noOfNoAvailableFunds}]]></measureExpression>
+				</measure>
+				<measure name="noOfPromoNotAttractive_MEASURE" class="java.lang.Integer" calculation="Sum">
+					<measureExpression><![CDATA[$F{noOfPromoNotAttractive}]]></measureExpression>
+				</measure>
+				<measure name="noOfBetterOffers_MEASURE" class="java.lang.Integer" calculation="Sum">
+					<measureExpression><![CDATA[$F{noOfBetterOffers}]]></measureExpression>
+				</measure>
+				<measure name="noOfMinimumThresholdTooHigh_MEASURE" class="java.lang.Integer" calculation="Sum">
+					<measureExpression><![CDATA[$F{noOfMinimumThresholdTooHigh}]]></measureExpression>
+				</measure>
+				<measure name="noOfClicksOthers_MEASURE" class="java.lang.Integer" calculation="Sum">
+					<measureExpression><![CDATA[$F{noOfClicksOthers}]]></measureExpression>
+				</measure>
+				<crosstabCell width="760" height="40">
+					<cellContents mode="Opaque" style="Crosstab_CD">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<frame>
+							<reportElement x="0" y="0" width="760" height="40" uuid="c410bb88-6277-400b-a9ba-02a6123abfd4">
+								<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.HorizontalRowLayout"/>
+							</reportElement>
+							<box>
+								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField>
+								<reportElement x="0" y="0" width="95" height="40" uuid="5d4934f4-4f37-426e-b3f1-d35daa576e33"/>
+								<box>
+									<pen lineWidth="0.5"/>
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Calibri" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$V{noOfInAppPromoRedirection_MEASURE}]]></textFieldExpression>
+							</textField>
+							<textField>
+								<reportElement x="95" y="0" width="95" height="40" uuid="5d4dc7bb-7efe-4e2f-9aff-b315425be4ad"/>
+								<box>
+									<pen lineWidth="0.5"/>
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Calibri" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$V{noOfYesPlsContactMe_MEASURE}]]></textFieldExpression>
+							</textField>
+							<textField>
+								<reportElement x="190" y="0" width="95" height="40" uuid="077decf9-81bb-41f8-acc3-643e4c59546e"/>
+								<box>
+									<pen lineWidth="0.5"/>
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Calibri" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$V{noOfNoImStillConsidering_MEASURE}]]></textFieldExpression>
+							</textField>
+							<textField>
+								<reportElement x="285" y="0" width="95" height="40" uuid="55abd8fc-638c-4086-8ba7-f2ee17190093"/>
+								<box>
+									<pen lineWidth="0.5"/>
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Calibri" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$V{noOfNoAvailableFunds_MEASURE}]]></textFieldExpression>
+							</textField>
+							<textField>
+								<reportElement x="380" y="0" width="95" height="40" uuid="80b4d4c7-d30a-4bab-8739-e603d5bbd9da"/>
+								<box>
+									<pen lineWidth="0.5"/>
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Calibri" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$V{noOfPromoNotAttractive_MEASURE}]]></textFieldExpression>
+							</textField>
+							<textField>
+								<reportElement x="475" y="0" width="95" height="40" uuid="7fde76b0-0abc-4dea-93da-2b213a609999"/>
+								<box>
+									<pen lineWidth="0.5"/>
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Calibri" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$V{noOfBetterOffers_MEASURE}]]></textFieldExpression>
+							</textField>
+							<textField>
+								<reportElement x="570" y="0" width="95" height="40" uuid="2a5bdd10-aa93-4ff2-98b7-0e042178e7c3"/>
+								<box>
+									<pen lineWidth="0.5"/>
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Calibri" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$V{noOfMinimumThresholdTooHigh_MEASURE}]]></textFieldExpression>
+							</textField>
+							<textField>
+								<reportElement x="665" y="0" width="95" height="40" uuid="ee11f48e-546e-430a-9a4c-514ec4ecbab3"/>
+								<box>
+									<pen lineWidth="0.5"/>
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Calibri" size="9"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$V{noOfClicksOthers_MEASURE}]]></textFieldExpression>
+							</textField>
+						</frame>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="60" height="160" columnTotalGroup="NoColGroup">
+					<cellContents mode="Opaque" style="Crosstab_CT">
+						<textField>
+							<reportElement x="0" y="0" width="60" height="20" uuid="772dab15-040c-42c2-a07f-7cc21356eb0f"/>
+							<textFieldExpression><![CDATA[$V{noOfInAppPromoRedirection_MEASURE}]]></textFieldExpression>
+						</textField>
+						<textField>
+							<reportElement x="0" y="20" width="60" height="20" uuid="60d2ff00-78fc-4e88-aaec-44148f0713f9"/>
+							<textFieldExpression><![CDATA[$V{noOfYesPlsContactMe_MEASURE}]]></textFieldExpression>
+						</textField>
+						<textField>
+							<reportElement x="0" y="40" width="60" height="20" uuid="169f59b4-e709-4c7c-ad8b-34143d3b8cbc"/>
+							<textFieldExpression><![CDATA[$V{noOfNoImStillConsidering_MEASURE}]]></textFieldExpression>
+						</textField>
+						<textField>
+							<reportElement x="0" y="60" width="60" height="20" uuid="220d3abd-16cb-4844-a2d2-37498f6458fe"/>
+							<textFieldExpression><![CDATA[$V{noOfNoAvailableFunds_MEASURE}]]></textFieldExpression>
+						</textField>
+						<textField>
+							<reportElement x="0" y="80" width="60" height="20" uuid="339f1741-8681-42af-abe1-6304dc44f5d0"/>
+							<textFieldExpression><![CDATA[$V{noOfPromoNotAttractive_MEASURE}]]></textFieldExpression>
+						</textField>
+						<textField>
+							<reportElement x="0" y="100" width="60" height="20" uuid="6fdf0a99-426b-4d1a-b084-9fd8d139c8fd"/>
+							<textFieldExpression><![CDATA[$V{noOfBetterOffers_MEASURE}]]></textFieldExpression>
+						</textField>
+						<textField>
+							<reportElement x="0" y="120" width="60" height="20" uuid="4676ce23-4c0b-418f-94e3-958821becbb3"/>
+							<textFieldExpression><![CDATA[$V{noOfMinimumThresholdTooHigh_MEASURE}]]></textFieldExpression>
+						</textField>
+						<textField>
+							<reportElement x="0" y="140" width="60" height="20" uuid="8d31caaf-c593-4810-9fb6-dbf11b064fd3"/>
+							<textFieldExpression><![CDATA[$V{noOfClicksOthers_MEASURE}]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="60" height="20" rowTotalGroup="engagementMode">
+					<cellContents mode="Opaque" style="Crosstab_CG"/>
+				</crosstabCell>
+				<crosstabCell width="60" height="20" rowTotalGroup="engagementMode" columnTotalGroup="NoColGroup">
+					<cellContents mode="Opaque" style="Crosstab_CT"/>
+				</crosstabCell>
+				<crosstabCell width="60" height="20" rowTotalGroup="noOfTargetedCustomer">
+					<cellContents mode="Opaque" style="Crosstab_CG"/>
+				</crosstabCell>
+				<crosstabCell width="60" height="20" rowTotalGroup="noOfTargetedCustomer" columnTotalGroup="NoColGroup">
+					<cellContents mode="Opaque" style="Crosstab_CT"/>
+				</crosstabCell>
+			</crosstab>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

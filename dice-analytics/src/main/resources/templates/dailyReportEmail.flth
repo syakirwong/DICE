@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>${title}</title>
+    </head>
+
+    <body>
+        <div style="font-size:16px; padding-top: 20px">
+            Hello,
+            <br/><br/>
+            Please find the attached daily {reportName} report.
+            <br/><br/>
+            Please note that this is an automated email, if you have any issues with the attachment or the report, please contact the system administrator for assistance.
+            <br/><br/>
+            Thank you.
+            <br/><br/>
+            Best regards,<br/>
+            DICE
+        </div>
+    </body>
+</html>

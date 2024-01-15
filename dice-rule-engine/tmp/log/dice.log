@@ -1,0 +1,29 @@
+2024-01-08 17:04:05.104  WARN 604 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/syakirwong/.m2/repository/org/json/json/20090211/json-20090211.jar!/org/json/JSONObject.class
+	jar:file:/Users/syakirwong/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-01-08 17:04:05.117  INFO 604 --- [main] c.a.d.DiceRuleEngineApplicationTests     : Starting DiceRuleEngineApplicationTests using Java 20.0.1 on Syakirs-MacBook-Pro.local with PID 604 (started by syakirwong in /Users/syakirwong/Documents/alliance_DICE/dice-rule-engine)
+2024-01-08 17:04:05.117  INFO 604 --- [main] c.a.d.DiceRuleEngineApplicationTests     : No active profile set, falling back to default profiles: default
+2024-01-08 17:04:05.428  INFO 604 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-01-08 17:04:05.428  INFO 604 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Cassandra repositories in DEFAULT mode.
+2024-01-08 17:04:05.450  INFO 604 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 6 Cassandra repository interfaces.
+2024-01-08 17:04:05.523  INFO 604 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-01-08 17:04:05.524  INFO 604 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Cassandra repositories in DEFAULT mode.
+2024-01-08 17:04:05.532  INFO 604 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Reactive Cassandra repository interfaces.
+2024-01-08 17:04:05.866  INFO 604 --- [main] c.d.o.d.internal.core.ContactPoints      : Contact point localhost:9042 resolves to multiple addresses, will use them all ([localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1])
+2024-01-08 17:04:05.915  INFO 604 --- [main] c.d.o.d.i.core.DefaultMavenCoordinates   : DataStax Java driver for Apache Cassandra(R) (com.datastax.oss:java-driver-core) version 4.11.3
+2024-01-08 17:04:06.008  INFO 604 --- [s0-admin-0] c.d.oss.driver.internal.core.time.Clock  : Could not access native clock (see debug logs for details), falling back to Java system clock
+2024-01-08 17:04:06.172  WARN 604 --- [s0-io-2] c.d.o.d.a.c.a.PlainTextAuthProviderBase  : [] localhost/[0:0:0:0:0:0:0:1]:9042 did not send an authentication challenge; This is suspicious because the driver expects authentication
+2024-01-08 17:04:06.365  WARN 604 --- [s0-admin-0] c.d.o.d.i.c.l.h.OptionalLocalDcHelper    : [s0|default] You specified datacenter1 as the local DC, but some contact points are from a different DC: Node(endPoint=localhost/127.0.0.1:9042, hostId=null, hashCode=1dd6225c)=null; please provide the correct local DC, or check your contact points
+2024-01-08 17:04:06.378  WARN 604 --- [s0-io-3] c.d.o.d.a.c.a.PlainTextAuthProviderBase  : [] localhost/[0:0:0:0:0:0:0:1]:9042 did not send an authentication challenge; This is suspicious because the driver expects authentication
+2024-01-08 17:04:07.607  INFO 604 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-01-08 17:04:08.316  INFO 604 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2024-01-08 17:04:08.339  INFO 604 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2024-01-08 17:04:08.358  INFO 604 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2024-01-08 17:04:08.474  INFO 604 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createEngagementModeTemplateUsingPOST_1
+2024-01-08 17:04:08.540  INFO 604 --- [main] c.a.d.DiceRuleEngineApplicationTests     : Started DiceRuleEngineApplicationTests in 3.749 seconds (JVM running for 4.271)
