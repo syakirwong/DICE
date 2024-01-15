@@ -10,4 +10,5 @@ spec:
   lifecycle: experimental
   owner: team-a
   system: DICE
-  dependsOn: ['component:dice-integration', 'component:dice-campaign']
+  dependsOn: ['resource:artists-db']
+    
