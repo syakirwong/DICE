@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: dice-rule-engine-api
+  description: Dice Rule Engine API
+  tags:
+    - rest
+  links:
+    - url: http://localhost:9095/dice/swagger-ui.html
+      title: API Spec
+      icon: code
+spec:
+  type: swagger
+  lifecycle: experimental
+  owner: team-a
