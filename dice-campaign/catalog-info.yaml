@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: dice-campaigm
+  description: Dice Campaign
+  tags:
+    - java
+spec:
+  type: service
+  lifecycle: experimental
+  owner: team-a
+  system: DICE
