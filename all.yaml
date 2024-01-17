@@ -7,4 +7,4 @@ spec:
   targets:
     - ./catalog-info.yaml
     - ./dice-rule-engine/catalog-info.yaml
-    - ./dice-rule-engine/api.yaml
+    - ./dice-rule-engine/api-info.yaml
