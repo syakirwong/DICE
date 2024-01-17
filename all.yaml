@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: dice-all
+  description: All DICE entities
+spec:
+  targets:
+    - ./catalog-info.yaml
+    - ./dice-rule-engine/catalog-info.yaml
+    - ./dice-rule-engine/api.yaml
